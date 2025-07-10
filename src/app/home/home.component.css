@@ -1,0 +1,37 @@
+.home {
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .module-card {
+      background: #f5f5f5;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+    
+    .module-card h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 1rem;
+    }
+    
+    .btn:hover {
+      background-color: #0056b3;
+    }

@@ -1,0 +1,11 @@
+<div class="home">
+      <h1>Welcome to Business Management System</h1>
+      <p>This application demonstrates lazy loading with standalone components:</p>
+      <div class="modules-grid">
+        <div class="module-card" *ngFor="let module of modules">
+          <h3>{{ module.name }}</h3>
+          <p>{{ module.description }}</p>
+          <a [routerLink]="module.route" class="btn">Go to {{ module.name }}</a>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,23 @@
+.customers-module {
+      padding: 1rem;
+    }
+    
+    .sub-nav {
+      margin: 1rem 0;
+      padding: 1rem;
+      background-color: #f8f9fa;
+      border-radius: 4px;
+    }
+    
+    .sub-nav a {
+      margin-right: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    
+    .sub-nav a.active {
+      background-color: #0056b3;
+    }

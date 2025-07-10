@@ -1,0 +1,11 @@
+<div class="customer-detail" *ngIf="customer">
+      <h3>Customer Details</h3>
+      <div class="detail-card">
+        <h4>{{ customer.name }}</h4>
+        <p><strong>Email:</strong> {{ customer.email }}</p>
+        <p><strong>Phone:</strong> {{ customer.phone }}</p>
+        <p><strong>Address:</strong> {{ customer.address }}</p>
+        <p><strong>Company:</strong> {{ customer.company }}</p>
+        <a routerLink="../" class="btn">Back to List</a>
+      </div>
+    </div>
