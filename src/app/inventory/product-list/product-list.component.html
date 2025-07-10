@@ -1,1 +1,29 @@
-<p>product-list works!</p>
+<div class="product-list">
+      <h3>Product Inventory</h3>
+      <div class="product-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>SKU</th>
+              <th>Stock</th>
+              <th>Price</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of products">
+              <td>{{ product.name }}</td>
+              <td>{{ product.sku }}</td>
+              <td>{{ product.stock }}</td>
+              <td>{{ product.price | currency }}</td>
+              <td>
+                <span class="status" [class.low-stock]="product.stock < 10">
+                  {{ product.stock < 10 ? 'Low Stock' : 'In Stock' }}
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
