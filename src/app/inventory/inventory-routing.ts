@@ -1,16 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
-
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
-})
-export class InventoryRoutes { }
-
-
-export const customersRoutes: Routes = [
+export const inventoryRoutes: Routes = [
   {
     path: '',
     loadComponent: () => import('./inventory/inventory.component').then(c => c.InventoryComponent),
